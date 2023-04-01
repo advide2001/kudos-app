@@ -42,6 +42,7 @@ const InputCard = (props) => {
       setInValidUsername(true);
       return false;
     }
+    setInValidUsername(false);
     return true;
   };
 
@@ -54,10 +55,15 @@ const InputCard = (props) => {
     return true;
   };
 
+  const validateFormData = () => {
+    const validUsername = validateUsername(newUsername);
+    const validAge = validateAge(newAge);
+    return validUsername && validAge;
+  };
+
   const handleFormSubmit = () => {
-    // validate the form data
-    if (!validateUsername(newUsername)) return;
-    if (!validateAge(newAge)) return;
+    // validate the form
+    if (!validateFormData()) return;
     console.log("form data is valid");
     const id = generateRandomString(4);
     props.addNewUser({ id: id, name: newUsername, age: newAge });
