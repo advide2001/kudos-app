@@ -1,9 +1,17 @@
+import { Button, TextField } from "@mui/material";
 import "./App.css";
 
 function App() {
   return (
-    <div>
-      <h1>Hello World!!</h1>
+    <div className="App">
+      <div>
+        <TextField fullWidth id="outlined-controlled" label="Username" />
+        <TextField fullWidth id="outlined-controlled" label="Age" />
+        <Button fullWidth variant="contained">
+          Add
+        </Button>
+      </div>
+      <div></div>
     </div>
   );
 }
