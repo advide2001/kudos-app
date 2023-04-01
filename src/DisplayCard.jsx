@@ -3,8 +3,11 @@ import Card from "@mui/material/Card";
 const DisplayCard = (props) => {
   return (
     <Card>
-      <div className="list__item">Joe is 34 years old</div>
-      <div className="list__item">Jane is 29 years old</div>
+      {props.users.map((user) => (
+        <div key={user.id} className="list__item">
+          {user.name} is {user.age} years old
+        </div>
+      ))}
     </Card>
   );
 };
