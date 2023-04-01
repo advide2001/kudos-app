@@ -1,17 +1,13 @@
-import { Button, TextField } from "@mui/material";
 import "./App.css";
+
+import InputCard from "./InputCard";
+import DisplayCard from "./DisplayCard";
 
 function App() {
   return (
     <div className="App">
-      <div>
-        <TextField fullWidth id="outlined-controlled" label="Username" />
-        <TextField fullWidth id="outlined-controlled" label="Age" />
-        <Button fullWidth variant="contained">
-          Add
-        </Button>
-      </div>
-      <div></div>
+      <InputCard />
+      <DisplayCard />
     </div>
   );
 }
