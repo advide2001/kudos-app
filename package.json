@@ -1,52 +1,55 @@
 {
-  "name": "redux-essentials-example",
-  "version": "1.0.0",
+  "name": "vite-template-redux",
   "private": true,
-  "dependencies": {
-    "@mswjs/data": "^0.8.4",
-    "@reduxjs/toolkit": "^1.6.1",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "classnames": "^2.2.6",
-    "date-fns": "^2.12.0",
-    "faker": "^4.1.0",
-    "miragejs": "^0.1.35",
-    "mock-socket": "^9.0.3",
-    "msw": "^0.36.3",
-    "react": "^17",
-    "react-dom": "^17",
-    "react-redux": "^7.2.4",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^4",
-    "seedrandom": "^3.0.5",
-    "txtgen": "^2.2.4"
-  },
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "type-check": "tsc"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.1"
   },
   "devDependencies": {
-    "prettier": "^2.0.2"
+    "@testing-library/dom": "^9.2.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.2.5",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jsdom": "^21.1.0",
+    "prettier": "^2.7.1",
+    "prettier-config-nick": "^1.0.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.0.0",
+    "vitest": "^0.30.1"
   },
-  "msw": {
-    "workerDirectory": "public"
-  }
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error",
+      "react/jsx-no-target-blank": "off"
+    }
+  },
+  "prettier": "prettier-config-nick"
 }
