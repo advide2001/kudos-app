@@ -4,6 +4,8 @@ This series aims to take an in-depth look at how to start, develop, and deploy a
 
 By the end of this series, you will have built and deployed an application called "Kudos", a site where users can create an account, log in, and give kudos to other site users.
 
+## Tech Stack
+
 The following tools were used to build this application:
 
 - **Database**: MongoDB as the database
@@ -21,3 +23,19 @@ During the development of this application, I learned the following:
 - Create, Read, Update, and Delete (CRUD) operations, along with the filtering and sorting of data using Prisma
 - Image uploads using AWS S3
 - Deploying to Vercel
+
+## Development
+
+To run your Remix app locally, make sure your project's local dependencies are installed:
+
+```sh
+npm install
+```
+
+Afterwards, start the Remix development server like so:
+
+```sh
+npm run dev
+```
+
+Open up [http://localhost:3000](http://localhost:3000) and you should be ready to go!
