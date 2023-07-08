@@ -1,41 +1,24 @@
 # Kudos Application
 
-This series aims to take an in-depth look at how to start, develop, and deploy an application using the technologies mentioned below and hopefully highlight just how easy it is to do so with the rich feature sets these tools provide!
+"Kudos" is a dummy application designed to practice new skills and explore the rich feature set of Prisma ORM. 
+Users on Kudos can create an account, log in, and give kudos to other users.
 
-By the end of this series, you will have built and deployed an application called "Kudos", a site where users can create an account, log in, and give kudos to other site users.
-
-## Tech Stack
+## Technologies Used
 
 The following tools were used to build this application:
 
-- **Database**: MongoDB as the database
-- **Object Document Mapper (ODM)**: Prisma as your Object Document Mapper (ODM)
-- **React Framework**: Remix as the React framework
-- **Styling**: TailwindCSS for styling the application
-- **Image Storage**: AWS S3 for storing user-uploaded images
-- **Deployment**: Vercel for deploying the application
+- **Database**: MongoDB
+- **Object Document Mapper (ODM)**: Prisma
+- **React Framework**: Next.js
+- **Styling**: TailwindCSS
+- **Image Storage**: AWS S3
+- **Deployment**: Vercel
 
-During the development of this application, I learned the following:
+## Features
 
-- Database configuration
-- Data modeling
-- Authentication with session-based auth
-- Create, Read, Update, and Delete (CRUD) operations, along with the filtering and sorting of data using Prisma
-- Image uploads using AWS S3
-- Deploying to Vercel
+During the development of this application, the following features were implemented:
 
-## Development
-
-To run your Remix app locally, make sure your project's local dependencies are installed:
-
-```sh
-npm install
-```
-
-Afterwards, start the Remix development server like so:
-
-```sh
-npm run dev
-```
-
-Open up [http://localhost:3000](http://localhost:3000) and you should be ready to go!
+- **Database Configuration**: Connect to MongoDB and set up the necessary configurations.
+- **Data Modeling**: Define the structure of the application's data using Prisma's data modeling capabilities.
+- **Authentication with Session-based Auth**: Implement user authentication using sessions for secure access.
+- **CRUD Operations**: Perform Create, Read, Update, and Delete operations on data with Prisma.
