@@ -1,6 +1,6 @@
 # Kudos Application
 
-"Kudos" is a dummy application designed to practice new skills and explore the rich feature set of Prisma ORM. 
+"Kudos" is a dummy application designed to practice new skills and explore the rich feature set of Prisma ORM.
 Users on Kudos can create an account, log in, and give kudos to other users.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
