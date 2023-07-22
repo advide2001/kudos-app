@@ -1,29 +1,8 @@
 # Kudos Application
 
-"Kudos" is a dummy application designed to practice new skills and explore the rich feature set of Prisma ORM.
-Users on Kudos can create an account, log in, and give kudos to other users.
+"Kudos" is a fictitious application created to explore the functionalities of Clerk (Auth-as-a-Service). When using the Kudos App, users can easily log in, while the entire authentication process and user management are efficiently handled by clerk.dev.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Technologies Used
-
-The following tools were used to build this application:
-
-- **Database**: MongoDB
-- **Object Document Mapper (ODM)**: Prisma
-- **React Framework**: Next.js
-- **Styling**: TailwindCSS
-- **Image Storage**: AWS S3
-- **Deployment**: Vercel
-
-## Features
-
-During the development of this application, the following features were implemented:
-
-- **Database Configuration**: Connect to MongoDB and set up the necessary configurations.
-- **Data Modeling**: Define the structure of the application's data using Prisma's data modeling capabilities.
-- **Authentication with Session-based Auth**: Implement user authentication using sessions for secure access.
-- **CRUD Operations**: Perform Create, Read, Update, and Delete operations on data with Prisma.
 
 ## Getting Started
 
